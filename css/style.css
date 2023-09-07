@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Sansation", sans-serif;
 }
 
 button {
@@ -17,9 +18,11 @@ button {
 a {
     text-decoration: none;
     color: inherit;
+    display: inline-flex;
 }
 
 li {
+    display: inline-flex;
     list-style: none;
 }
 
@@ -29,4 +32,139 @@ li {
     padding: 0 20px;
 }
 
-/* Promo */
+/* Fonts */
+
+@font-face {
+    font-family: "Sansation";
+    src: url("../fonts/Sansation_Light.ttf") format(truetype);
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Sansation";
+    src: url("../fonts/Sansation_Regular.ttf") format(truetype);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Sansation";
+    src: url("../fonts/Sansation_Bold.ttf") format(truetype);
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Sansation";
+    src: url("../fonts/Sansation_Italic.ttf") format(truetype);
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Sansation";
+    src: url("../fonts/Sansation_Light_Italic.ttf") format(truetype);
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Sansation";
+    src: url("../fonts/Sansation_Bold_Italic.ttf") format(truetype);
+    font-style: italic;
+}
+
+/* Header */
+
+.header {
+    height: 148px;
+    background: #00071E;
+    padding: 20px 0;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.header__block {
+    width: 100%;
+}
+
+.header__contacts {
+    display: flex;
+    align-items: center;
+}
+
+.header__title {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 111.9%;
+    color: #F8F9FF;
+    margin-right: 192px;
+}
+
+.phone {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 111.92%;
+    color: #F8F9FF;
+}
+
+.telegram, .whatsapp {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: .3s ease;
+}
+
+.telegram {
+    background: url("../img/header/Telegram.png");
+    margin-right: 8px;
+}
+
+.telegram:hover {
+    background: url("../img/header/Telegram-hover.png");
+}
+
+.whatsapp {
+    background: url("../img/header/WhatsApp.png");
+}
+
+.whatsapp:hover {
+    background: url("../img/header/WhatsApp-hover.png");
+}
+
+.header .phone {
+    margin-right: 54px;
+}
+
+.nav {
+    margin-top: 12px;
+}
+
+.nav__list {
+    display: flex;
+    gap: 0;
+}
+
+.nav__list-item {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+    color: #F8F9FF;
+    text-transform: uppercase;
+    padding: 20px 20px 10px 20px;
+    border-top: 4px solid #182037;
+    transition: .4s ease-in;
+    cursor: pointer;
+    border-radius: 0px;
+}
+
+.nav__list-item:hover {
+    color: #C30000;
+    border-top: 4px solid #C30000;
+    border-radius: 2px;
+}
