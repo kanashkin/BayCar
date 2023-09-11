@@ -13,7 +13,7 @@
    <header class="header">
         <div class="container header__inner">
             <a href="index.html">
-                <img src="img/header/logo.svg" alt="logo icon">
+                <img src="img/logo.svg" alt="logo icon">
             </a>
             <div class="header__block">
                 <div class="header__contacts">
@@ -50,8 +50,8 @@
             </div>
         </div>
         <div class="animation__wrapper">
-            <img class="light left-light" src="img/promo/left-light.svg" alt="left animation light">
-            <img class="light right-light" src="img/promo/right-light.svg" alt="right animation light">
+            <img class="light left-light" src="img/promo/left-light.png" alt="left animation light">
+            <img class="light right-light" src="img/promo/right-light.png" alt="right animation light">
         </div>
    </section>
 
@@ -99,8 +99,8 @@
                 неповторимый опыт владения авто премиум класса.
             </p>
             
-            <div class="about__appeal">
-                <p class="about__appeal-text">
+            <div class="red__banner">
+                <p class="red__banner-text">
                     Присоединяйтесь к тем, кто выбирает качество, стиль и комфорт
                     с BayCar. Давайте сделаем вашу мечту о премиум автомобиле
                     реальностью.
@@ -118,12 +118,12 @@
                         </p>
                     </div>
                     <div class="about__services-block">
-                        <ul class="services__list">
-                            <li class="services__list-item">Подбор автомобиля в Европе/Корее</li>
-                            <li class="services__list-item">Пригон авто в Россию</li>
-                            <li class="services__list-item">Оформление и регистрация</li>
-                            <li class="services__list-item">Поездка за автомобилем</li>
-                            <li class="services__list-item">возможность купить авто в лизинг</li>
+                        <ul class="check__list">
+                            <li class="check__list-item">Подбор автомобиля в Европе/Корее</li>
+                            <li class="check__list-item">Пригон авто в Россию</li>
+                            <li class="check__list-item">Оформление и регистрация</li>
+                            <li class="check__list-item">Поездка за автомобилем</li>
+                            <li class="check__list-item">возможность купить авто в лизинг</li>
                         </ul>
                     </div>
                 </div>
@@ -146,7 +146,7 @@
                 <div class="consultation__block-right">
                     <form action="" class="consultation__form">
                         <input type="text" placeholder="Ваше Имя" required>
-                        <input type="text" placeholder="Ваш Телефон" required>
+                        <input type="text" placeholder="Ваш телефон" required>
                         <p>Нажимая на кнопку, вы соглашаетесь с условиями о персональных данных</p>
                         <button type="submit">Получить консультацию</button>
                     </form>
@@ -154,6 +154,483 @@
             </div>
         </div>
    </section>
+
+   <section class="catalog">
+        <div class="container">
+            <h2 class="title catalog__title">пригнанные автомобили</h2>
+            <ul class="catalog__tabs">
+                <li class="catalog__tab" data-car-type="sedan">Седан</li>
+                <li class="catalog__tab" data-car-type="hatchback">Хэтчбек</li>
+                <li class="catalog__tab" data-car-type="miniwan">минивэн</li>
+                <li class="catalog__tab" data-car-type="crossover">Кроссовер</li>
+                <li class="catalog__tab" data-car-type="universal">Универсал</li>
+                <li class="catalog__tab" data-car-type="coupe">Купе</li>
+                <li class="catalog__tab" data-car-type="sportcar">Спорткар</li>
+                <li class="catalog__tab" data-car-type="pickup">Пикап</li>
+            </ul>
+            <div class="dropdown__block">
+                <p class="dropdown__title">Марка автомобиля</p>
+                <img class="dropdown__trigger" style="cursor: pointer;" src="img/catalog/arrow-down.svg" alt="arrow icon">
+            </div>
+            <div class="dropdown__menu">
+                <div class="dropdown__item">
+                    <h4 class="firm__name">все марки</h4>
+                </div>
+                <div class="dropdown__item">
+                    <img class="firm__icon" src="img/catalog/firms/bmw.png" alt="">
+                    <h4 class="firm__name">BMW</h4>
+                </div>
+                <div class="dropdown__item">
+                    <img class="firm__icon" src="img/catalog/firms/toyota.png" alt="">
+                    <h4 class="firm__name">Toyota</h4>
+                </div>
+                <div class="dropdown__item">
+                    <img class="firm__icon" src="img/catalog/firms/volksvagen.png" alt="">
+                    <h4 class="firm__name">Volkswagen</h4>
+                </div>
+                <div class="dropdown__item">
+                    <img class="firm__icon" src="img/catalog/firms/mercedes.png" alt="">
+                    <h4 class="firm__name">Mercedes Benz</h4>
+                </div>
+                <div class="dropdown__item">
+                    <img class="firm__icon" src="img/catalog/firms/mitsubishi.png" alt="">
+                    <h4 class="firm__name">Mitsubishi</h4>
+                </div>
+                <div class="dropdown__item">
+                    <img class="firm__icon" src="img/catalog/firms/lexus.png" alt="">
+                    <h4 class="firm__name">Lexus</h4>
+                </div>
+                <div class="dropdown__item">
+                    <img class="firm__icon" src="img/catalog/firms/infinity.png" alt="">
+                    <h4 class="firm__name">Infinity</h4>
+                </div>
+                <div class="dropdown__item">
+                    <img class="firm__icon" src="img/catalog/firms/chevrolet.png" alt="">
+                    <h4 class="firm__name">Chevrolet</h4>
+                </div>
+                <div class="dropdown__item">
+                    <img class="firm__icon" src="img/catalog/firms/audi.png" alt="">
+                    <h4 class="firm__name">Audi</h4>
+                </div>
+                <div class="dropdown__item">
+                    <img class="firm__icon" src="img/catalog/firms/volvo.png" alt="">
+                    <h4 class="firm__name">Volvo</h4>
+                </div>
+                <div class="dropdown__item">
+                    <img class="firm__icon" src="img/catalog/firms/skoda.png" alt="">
+                    <h4 class="firm__name">Skoda</h4>
+                </div>
+            </div>
+            <div class="catalog__page">
+                <div class="catalog__item">
+                    <img class="catalog__item-image" src="img/catalog/items/bmw-320.jpg" alt="">
+                    <h3 class="catalog__item-name">BMW 320</h3>
+                    <div class="catalog__item-info">
+                        <div class="info__item">
+                            <h6 class="info__item-name">Год</h6>
+                            <p class="info__item-value">2017</p>
+                        </div>
+                        <div class="info__item">
+                            <h6 class="info__item-name">Тип двигателя:</h6>
+                            <p class="info__item-value">Дизельный</p>
+                        </div>
+                        <div class="info__item">
+                            <h6 class="info__item-name">КПП:</h6>
+                            <p class="info__item-value">Автомат</p>
+                        </div>
+                        <div class="info__item">
+                            <h6 class="info__item-name">Объем двигателя:</h6>
+                            <p class="info__item-value">1968 см³</p>
+                        </div>
+                    </div>
+                    <h5 class="catalog__item-price__title">Стоимость под ключ в России</h5>
+                    <p class="catalog__item-price">26 300 EUR</p>
+                </div>
+                <div class="catalog__item">
+                    <img class="catalog__item-image" src="img/catalog/items/opel-insignia.jpg" alt="">
+                    <h3 class="catalog__item-name">Opel Insignia</h3>
+                    <div class="catalog__item-info">
+                        <div class="info__item">
+                            <h6 class="info__item-name">Год</h6>
+                            <p class="info__item-value">2018</p>
+                        </div>
+                        <div class="info__item">
+                            <h6 class="info__item-name">Тип двигателя:</h6>
+                            <p class="info__item-value">Дизельный</p>
+                        </div>
+                        <div class="info__item">
+                            <h6 class="info__item-name">КПП:</h6>
+                            <p class="info__item-value">Механическая</p>
+                        </div>
+                        <div class="info__item">
+                            <h6 class="info__item-name">Объем двигателя:</h6>
+                            <p class="info__item-value">1598 см³</p>
+                        </div>
+                    </div>
+                    <h5 class="catalog__item-price__title">Стоимость под ключ в России</h5>
+                    <p class="catalog__item-price">15 400 EUR</p>
+                </div>
+                <div class="catalog__item">
+                    <img class="catalog__item-image" src="img/catalog/items/audi-a4.jpg" alt="">
+                    <h3 class="catalog__item-name">Audi A4</h3>
+                    <div class="catalog__item-info">
+                        <div class="info__item">
+                            <h6 class="info__item-name">Год</h6>
+                            <p class="info__item-value">2017</p>
+                        </div>
+                        <div class="info__item">
+                            <h6 class="info__item-name">Тип двигателя:</h6>
+                            <p class="info__item-value">Дизельный</p>
+                        </div>
+                        <div class="info__item">
+                            <h6 class="info__item-name">КПП:</h6>
+                            <p class="info__item-value">Автомат</p>
+                        </div>
+                        <div class="info__item">
+                            <h6 class="info__item-name">Объем двигателя:</h6>
+                            <p class="info__item-value">1968 см³</p>
+                        </div>
+                    </div>
+                    <h5 class="catalog__item-price__title">Стоимость под ключ в России</h5>
+                    <p class="catalog__item-price">21 500 USD</p>
+                </div>
+                <div class="catalog__item">
+                    <img class="catalog__item-image" src="img/catalog/items/kia-soul.jpg" alt="">
+                    <h3 class="catalog__item-name">KIA SOUL</h3>
+                    <div class="catalog__item-info">
+                        <div class="info__item">
+                            <h6 class="info__item-name">Год</h6>
+                            <p class="info__item-value">2022</p>
+                        </div>
+                        <div class="info__item">
+                            <h6 class="info__item-name">Тип двигателя:</h6>
+                            <p class="info__item-value">Бензин</p>
+                        </div>
+                        <div class="info__item">
+                            <h6 class="info__item-name">КПП:</h6>
+                            <p class="info__item-value">Автомат</p>
+                        </div>
+                        <div class="info__item">
+                            <h6 class="info__item-name">Объем двигателя:</h6>
+                            <p class="info__item-value">1998 см³</p>
+                        </div>
+                    </div>
+                    <h5 class="catalog__item-price__title">Стоимость под ключ в России</h5>
+                    <p class="catalog__item-price">28 000 EUR</p>
+                </div>
+                <div class="catalog__item">
+                    <img class="catalog__item-image" src="img/catalog/items/audi-a6.jpg" alt="">
+                    <h3 class="catalog__item-name">AUDI A6</h3>
+                    <div class="catalog__item-info">
+                        <div class="info__item">
+                            <h6 class="info__item-name">Год</h6>
+                            <p class="info__item-value">2017</p>
+                        </div>
+                        <div class="info__item">
+                            <h6 class="info__item-name">Тип двигателя:</h6>
+                            <p class="info__item-value">Дизельный</p>
+                        </div>
+                        <div class="info__item">
+                            <h6 class="info__item-name">КПП:</h6>
+                            <p class="info__item-value">Автомат</p>
+                        </div>
+                        <div class="info__item">
+                            <h6 class="info__item-name">Объем двигателя:</h6>
+                            <p class="info__item-value">1968 см³</p>
+                        </div>
+                    </div>
+                    <h5 class="catalog__item-price__title">Стоимость под ключ в России</h5>
+                    <p class="catalog__item-price">26 300 EUR</p>
+                </div>
+                <div class="catalog__item">
+                    <img class="catalog__item-image" src="img/catalog/items/audi-a4-allroad-premium-plus.jpg" alt="">
+                    <h3 class="catalog__item-name">AUDI A4 ALLROAD PREMIUM PLUS</h3>
+                    <div class="catalog__item-info">
+                        <div class="info__item">
+                            <h6 class="info__item-name">Год</h6>
+                            <p class="info__item-value">2021</p>
+                        </div>
+                        <div class="info__item">
+                            <h6 class="info__item-name">Тип двигателя:</h6>
+                            <p class="info__item-value">Бензин</p>
+                        </div>
+                        <div class="info__item">
+                            <h6 class="info__item-name">КПП:</h6>
+                            <p class="info__item-value">Автомат</p>
+                        </div>
+                        <div class="info__item">
+                            <h6 class="info__item-name">Объем двигателя:</h6>
+                            <p class="info__item-value">2000 см³</p>
+                        </div>
+                    </div>
+                    <h5 class="catalog__item-price__title">Стоимость под ключ в России</h5>
+                    <p class="catalog__item-price">32 000 USD</p>
+                </div>
+                <div class="catalog__item">
+                    <img class="catalog__item-image" src="img/catalog/items/toyota-avensis.jpg" alt="">
+                    <h3 class="catalog__item-name">toyota avensis</h3>
+                    <div class="catalog__item-info">
+                        <div class="info__item">
+                            <h6 class="info__item-name">Год</h6>
+                            <p class="info__item-value">2017</p>
+                        </div>
+                        <div class="info__item">
+                            <h6 class="info__item-name">Тип двигателя:</h6>
+                            <p class="info__item-value">Дизельный</p>
+                        </div>
+                        <div class="info__item">
+                            <h6 class="info__item-name">КПП:</h6>
+                            <p class="info__item-value">Автомат</p>
+                        </div>
+                        <div class="info__item">
+                            <h6 class="info__item-name">Объем двигателя:</h6>
+                            <p class="info__item-value">1995 см³</p>
+                        </div>
+                    </div>
+                    <h5 class="catalog__item-price__title">Стоимость под ключ в России</h5>
+                    <p class="catalog__item-price">14 800 EUR</p>
+                </div>
+                <div class="catalog__item">
+                    <img class="catalog__item-image" src="img/catalog/items/buick-regl-tourx-essence.jpg" alt="">
+                    <h3 class="catalog__item-name">BUICK REGAL TOURX ESSENCE</h3>
+                    <div class="catalog__item-info">
+                        <div class="info__item">
+                            <h6 class="info__item-name">Год</h6>
+                            <p class="info__item-value">2017</p>
+                        </div>
+                        <div class="info__item">
+                            <h6 class="info__item-name">Тип двигателя:</h6>
+                            <p class="info__item-value">Бензин</p>
+                        </div>
+                        <div class="info__item">
+                            <h6 class="info__item-name">КПП:</h6>
+                            <p class="info__item-value">Автомат</p>
+                        </div>
+                        <div class="info__item">
+                            <h6 class="info__item-name">Объем двигателя:</h6>
+                            <p class="info__item-value">1998 см³</p>
+                        </div>
+                    </div>
+                    <h5 class="catalog__item-price__title">Стоимость под ключ в России</h5>
+                    <p class="catalog__item-price">24 440 USD</p>
+                </div>
+            </div>
+        </div>
+   </section>
+
+   <section class="price">
+        <div class="container">
+            <h2 class="title price__title">пригнанные автомобили</h2>
+            <h3 class="price__subtitle">Общая стоимость наших услуг рассчитывается в российских рублях, и она начинается <span>от 35 000 рублей</span></h3>
+            <div class="stages">
+                <h3 class="stages__title block-title"><span>Этапы Работы</span> в России включают:</h3>
+                <ul class="check__list check__list-stages">
+                    <li class="check__list-item">Получение информации о техобслуживании автомобиля в Европе</li>
+                    <li class="check__list-item">Доставка в Россию, регистрация и таможенные процедуры</li>
+                    <li class="check__list-item">Перевозка и временное хранение на складе</li>
+                    <li class="check__list-item">Поездка за автомобилем</li>
+                    <li class="check__list-item">Техническая проверка автомобиля на наших станциях техобслуживания в Москве</li>
+                </ul>
+                <img class="big__logo" src="img/big-logo.svg" alt="big logo icon">
+            </div>
+            <div class="payment__banner">
+                <p class="payment__banner-text">
+                    Минимальная предоплата при заключении договора <span>5%</span>, остальное при получении авто
+                </p>
+            </div>
+            <div class="price__rules">
+                <h3 class="price__rules-title block-title">Из чего складывается <span>стоимость?</span></h3>
+                <ul class="price__rules__list">
+                    <li class="price__rules-item">
+                        Стоимость, за которую был выигран аукцион в Европе/Корее 
+                        (мы согласуем это с вами)
+                    </li>
+                    <li class="price__rules-item">Стоимость доставки автомобиля в Москву - от 50 000 рублей</li>
+                    <li class="price__rules-item">Сборы, связанные с лизингом в стране продавца - от 15 000 рублей</li>
+                    <li class="price__rules-item">Операционный сбор - от 20 600 рублей</li>
+                    <li class="price__rules-item">Аукционные сборы - от 9 000 рублей</li>
+                    <li class="price__rules-item">Документальные расходы в Европе/ Корее - от 10 800 рублей</li>
+                    <li class="price__rules-item">Таможенные платежи</li>
+                </ul>
+            </div>
+            <div class="red__banner">
+                <p class="red__banner-text">
+                    Мы предоставляем вам четкий и подробный расчет в российских
+                    рублях, чтобы вы могли легко оценить стоимость доставки и
+                    решить, какой автомобиль подходит именно вам.
+                </p>
+            </div>
+        </div>
+   </section>
+
+   <section class="advantages">
+    <h2 class="title advantages__title">Почему выбирают нас?</h2>
+        <div class="advantages__wrapper">
+            <div class="advantages__item">
+                <h4 class="advantages__item-title">Опыт</h4>
+                <p class="advantages__item-descr">
+                    Мы занимаемся доставкой автомобилей уже 15 лет,
+                    обеспечивая клиентов надёжностью и экспертизой,
+                    которыми можно доверять
+                </p>
+            </div>
+            <div class="advantages__item">
+                <h4 class="advantages__item-title">Широкий выбор</h4>
+                <p class="advantages__item-descr">
+                    Наш каталог включает в себя автомобили всех ведущих мировых
+                    брендов, предоставляя клиентам бесконечные варианты выбора
+                </p>
+            </div>
+            <div class="advantages__item">
+                <h4 class="advantages__item-title">Прозрачность</h4>
+                <p class="advantages__item-descr">
+                    Мы ценим ваше доверие и предлагаем прозрачные и честные
+                    условия сделок без скрытых комиссий или непредвиденных расходов
+                </p>
+            </div>
+            <div class="advantages__item">
+                <h4 class="advantages__item-title">Персональное обслуживание</h4>
+                <p class="advantages__item-descr">
+                    Наша команда профессионалов гарантирует индивидуальное
+                    внимание к каждому клиенту, сопровождая вас на каждом
+                    этапе покупки и послепродажного обслуживания
+                </p>
+            </div>
+        </div>
+   </section>
+
+   <section class="help">
+        <div class="container">
+            <div class="help__left__block">
+                <h3 class="block-title">Сомневаетесь? <span>Мы готовы помочь:</span></h3>
+                <p class="help__descr">
+                    Если у вас есть сомнения или вопросы относительно выбора автомобиля,
+                    не стесняйтесь — обратитесь к нам. Оставьте свой запрос или вопрос,
+                    и наш опытный консультант ответит на них в кратчайшие сроки.
+                    <br> <br>
+                    Мы понимаем, что решение о покупке автомобиля — это важный шаг,
+                    и мы здесь, чтобы сделать его для вас проще и увереннее.
+                    Сделайте первый шаг к своему идеальному авто, обратившись
+                    к нам с вопросами и сомнениями.
+                </p>
+                <form class="help__form" action="">
+                    <input type="text" placeholder="Ваше Имя">
+                    <input type="text" placeholder="Ваш номер телефона">
+                    <textarea class="help__textarea" name="" id="" placeholder="Сообщение" style="resize: none;"></textarea>
+                    <p>Нажимая на кнопку, Вы соглашаетесь с условиями о персональных данных</p>
+                    <button class="help__button" type="submit">Оставить запрос</button>
+                </form>
+            </div>
+            <img class="help__car" src="img/help/car.png" alt="car image">
+        </div>
+   </section>
+
+   <section class="faq">
+        <h2 class="title faq__title">Часто задаваемые вопросы</h2>
+        <div class="collapse">
+            <div class="collapse__block">
+                <div class="collapse__block-line">
+                    <p class="collapse__block-title">Какая гарантия того, что автомобиль будет в хорошем состоянии?</p>
+                    <div class="collapse__block-trigger">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M10 15L20 25L30 15" stroke="#F8F9FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+                <p class="collapse__block-answer">Ответ</p>
+            </div>
+            <div class="collapse__block">
+                <div class="collapse__block-line">
+                    <p class="collapse__block-title">Какие документы и формальности мне нужно будет оформить?</p>
+                    <div class="collapse__block-trigger">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M10 15L20 25L30 15" stroke="#F8F9FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+                <p class="collapse__block-answer">Наша команда поможет вам с оформлением всех необходимых документов и таможенных формальностей. Мы обеспечим гладкий процесс.</p>
+            </div>
+            <div class="collapse__block">
+                <div class="collapse__block-line">
+                    <p class="collapse__block-title">Сколько времени занимает доставка автомобиля?</p>
+                    <div class="collapse__block-trigger">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M10 15L20 25L30 15" stroke="#F8F9FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+                <p class="collapse__block-answer">Ответ</p>
+            </div>
+            <div class="collapse__block">
+                <div class="collapse__block-line">
+                    <p class="collapse__block-title">Могу ли я протестировать авто перед покупкой?</p>
+                    <div class="collapse__block-trigger">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M10 15L20 25L30 15" stroke="#F8F9FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+                <p class="collapse__block-answer">Ответ</p>
+            </div>
+            <div class="collapse__block">
+                <div class="collapse__block-line">
+                    <p class="collapse__block-title">Почему стоит обратиться в BayCar?</p>
+                    <div class="collapse__block-trigger">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M10 15L20 25L30 15" stroke="#F8F9FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+                <p class="collapse__block-answer">Ответ</p>
+            </div>
+            <div class="collapse__block">
+                <div class="collapse__block-line">
+                    <p class="collapse__block-title">Какие авто можно привезти?</p>
+                    <div class="collapse__block-trigger">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M10 15L20 25L30 15" stroke="#F8F9FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+                <p class="collapse__block-answer">Ответ</p>
+            </div>
+            <div class="collapse__block">
+                <div class="collapse__block-line">
+                    <p class="collapse__block-title">Как начать сотрудничество?</p>
+                    <div class="collapse__block-trigger">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M10 15L20 25L30 15" stroke="#F8F9FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+                <p class="collapse__block-answer">Ответ</p>
+            </div>
+            <div class="collapse__block">
+                <div class="collapse__block-line">
+                    <p class="collapse__block-title">Как оплатить?</p>
+                    <div class="collapse__block-trigger">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M10 15L20 25L30 15" stroke="#F8F9FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+                <p class="collapse__block-answer">Ответ</p>
+            </div>
+            <div class="collapse__block">
+                <div class="collapse__block-line">
+                    <p class="collapse__block-title">Можно ли вернуть автомобиль?</p>
+                    <div class="collapse__block-trigger">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M10 15L20 25L30 15" stroke="#F8F9FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+                <p class="collapse__block-answer">Ответ</p>
+            </div>
+        </div>
+   </section>
+
+   <script src="js/app.js"></script>
 
 </body>
 </html>
