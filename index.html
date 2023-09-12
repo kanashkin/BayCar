@@ -49,10 +49,10 @@
                 <button class="button-application">Оставить заявку</button>
                 <button class="button-more">Узнать больше</button>
             </div>
-        </div>
-        <div class="animation__wrapper">
-            <img class="light left-light" src="img/promo/left-light.png" alt="left animation light">
-            <img class="light right-light" src="img/promo/right-light.png" alt="right animation light">
+            <div class="animation__wrapper">
+                <img class="light left-light" src="img/promo/left-light.png" alt="left animation light">
+                <img class="light right-light" src="img/promo/right-light.png" alt="right animation light">
+            </div>
         </div>
    </section>
 
@@ -174,56 +174,56 @@
                 <img class="dropdown__trigger" style="cursor: pointer;" src="img/catalog/arrow-down.svg" alt="arrow icon">
             </div>
             <div class="dropdown__menu">
-                <div class="dropdown__item">
+                <div class="dropdown__item" data-firm="all">
                     <h4 class="firm__name">все марки</h4>
                 </div>
-                <div class="dropdown__item">
+                <div class="dropdown__item" data-firm="BMW">
                     <img class="firm__icon" src="img/catalog/firms/bmw.png" alt="">
                     <h4 class="firm__name">BMW</h4>
                 </div>
-                <div class="dropdown__item">
+                <div class="dropdown__item" data-firm="Toyota">
                     <img class="firm__icon" src="img/catalog/firms/toyota.png" alt="">
                     <h4 class="firm__name">Toyota</h4>
                 </div>
-                <div class="dropdown__item">
+                <div class="dropdown__item" data-firm="Volkswagen">
                     <img class="firm__icon" src="img/catalog/firms/volksvagen.png" alt="">
                     <h4 class="firm__name">Volkswagen</h4>
                 </div>
-                <div class="dropdown__item">
+                <div class="dropdown__item" data-firm="Mercedes Benz">
                     <img class="firm__icon" src="img/catalog/firms/mercedes.png" alt="">
                     <h4 class="firm__name">Mercedes Benz</h4>
                 </div>
-                <div class="dropdown__item">
+                <div class="dropdown__item" data-firm="Mitsubishi">
                     <img class="firm__icon" src="img/catalog/firms/mitsubishi.png" alt="">
                     <h4 class="firm__name">Mitsubishi</h4>
                 </div>
-                <div class="dropdown__item">
+                <div class="dropdown__item" data-firm="Lexus">
                     <img class="firm__icon" src="img/catalog/firms/lexus.png" alt="">
                     <h4 class="firm__name">Lexus</h4>
                 </div>
-                <div class="dropdown__item">
+                <div class="dropdown__item" data-firm="Infinity">
                     <img class="firm__icon" src="img/catalog/firms/infinity.png" alt="">
                     <h4 class="firm__name">Infinity</h4>
                 </div>
-                <div class="dropdown__item">
+                <div class="dropdown__item" data-firm="Chevrolet">
                     <img class="firm__icon" src="img/catalog/firms/chevrolet.png" alt="">
                     <h4 class="firm__name">Chevrolet</h4>
                 </div>
-                <div class="dropdown__item">
+                <div class="dropdown__item" data-firm="Audi">
                     <img class="firm__icon" src="img/catalog/firms/audi.png" alt="">
                     <h4 class="firm__name">Audi</h4>
                 </div>
-                <div class="dropdown__item">
+                <div class="dropdown__item" data-firm="Volvo">
                     <img class="firm__icon" src="img/catalog/firms/volvo.png" alt="">
                     <h4 class="firm__name">Volvo</h4>
                 </div>
-                <div class="dropdown__item">
+                <div class="dropdown__item" data-firm="Skoda">
                     <img class="firm__icon" src="img/catalog/firms/skoda.png" alt="">
                     <h4 class="firm__name">Skoda</h4>
                 </div>
             </div>
             <div class="catalog__page">
-                <div class="catalog__item">
+                <div class="catalog__item" data-car-type="hatchback" data-firm="BMW">
                     <img class="catalog__item-image" src="img/catalog/items/bmw-320.jpg" alt="">
                     <h3 class="catalog__item-name">BMW 320</h3>
                     <div class="catalog__item-info">
@@ -247,7 +247,7 @@
                     <h5 class="catalog__item-price__title">Стоимость под ключ в России</h5>
                     <p class="catalog__item-price">26 300 EUR</p>
                 </div>
-                <div class="catalog__item">
+                <div class="catalog__item" data-car-type="universal" data-firm="Opel">
                     <img class="catalog__item-image" src="img/catalog/items/opel-insignia.jpg" alt="">
                     <h3 class="catalog__item-name">Opel Insignia</h3>
                     <div class="catalog__item-info">
@@ -271,7 +271,7 @@
                     <h5 class="catalog__item-price__title">Стоимость под ключ в России</h5>
                     <p class="catalog__item-price">15 400 EUR</p>
                 </div>
-                <div class="catalog__item">
+                <div class="catalog__item" data-car-type="sedan" data-firm="Audi">
                     <img class="catalog__item-image" src="img/catalog/items/audi-a4.jpg" alt="">
                     <h3 class="catalog__item-name">Audi A4</h3>
                     <div class="catalog__item-info">
@@ -295,7 +295,7 @@
                     <h5 class="catalog__item-price__title">Стоимость под ключ в России</h5>
                     <p class="catalog__item-price">21 500 USD</p>
                 </div>
-                <div class="catalog__item">
+                <div class="catalog__item" data-car-type="universal" data-firm="KIA">
                     <img class="catalog__item-image" src="img/catalog/items/kia-soul.jpg" alt="">
                     <h3 class="catalog__item-name">KIA SOUL</h3>
                     <div class="catalog__item-info">
@@ -319,7 +319,7 @@
                     <h5 class="catalog__item-price__title">Стоимость под ключ в России</h5>
                     <p class="catalog__item-price">28 000 EUR</p>
                 </div>
-                <div class="catalog__item">
+                <div class="catalog__item" data-car-type="coupe" data-firm="Audi">
                     <img class="catalog__item-image" src="img/catalog/items/audi-a6.jpg" alt="">
                     <h3 class="catalog__item-name">AUDI A6</h3>
                     <div class="catalog__item-info">
@@ -343,7 +343,7 @@
                     <h5 class="catalog__item-price__title">Стоимость под ключ в России</h5>
                     <p class="catalog__item-price">26 300 EUR</p>
                 </div>
-                <div class="catalog__item">
+                <div class="catalog__item" data-car-type="crossover" data-firm="Audi">
                     <img class="catalog__item-image" src="img/catalog/items/audi-a4-allroad-premium-plus.jpg" alt="">
                     <h3 class="catalog__item-name">AUDI A4 ALLROAD PREMIUM PLUS</h3>
                     <div class="catalog__item-info">
@@ -367,7 +367,7 @@
                     <h5 class="catalog__item-price__title">Стоимость под ключ в России</h5>
                     <p class="catalog__item-price">32 000 USD</p>
                 </div>
-                <div class="catalog__item">
+                <div class="catalog__item" data-car-type="hatchback" data-firm="Toyota">
                     <img class="catalog__item-image" src="img/catalog/items/toyota-avensis.jpg" alt="">
                     <h3 class="catalog__item-name">toyota avensis</h3>
                     <div class="catalog__item-info">
@@ -391,7 +391,7 @@
                     <h5 class="catalog__item-price__title">Стоимость под ключ в России</h5>
                     <p class="catalog__item-price">14 800 EUR</p>
                 </div>
-                <div class="catalog__item">
+                <div class="catalog__item" data-car-type="universal" data-firm="Buick">
                     <img class="catalog__item-image" src="img/catalog/items/buick-regl-tourx-essence.jpg" alt="">
                     <h3 class="catalog__item-name">BUICK REGAL TOURX ESSENCE</h3>
                     <div class="catalog__item-info">
@@ -515,9 +515,9 @@
                     к нам с вопросами и сомнениями.
                 </p>
                 <form class="help__form" action="">
-                    <input type="text" placeholder="Ваше Имя">
-                    <input type="text" placeholder="Ваш номер телефона">
-                    <textarea class="help__textarea" name="" id="" placeholder="Сообщение" style="resize: none;"></textarea>
+                    <input type="text" placeholder="Ваше Имя" required>
+                    <input type="text" placeholder="Ваш номер телефона" required>
+                    <textarea class="help__textarea" name="" id="" placeholder="Сообщение" style="resize: none;" required></textarea>
                     <p>Нажимая на кнопку, Вы соглашаетесь с условиями о персональных данных</p>
                     <button class="help__button" type="submit">Оставить запрос</button>
                 </form>
@@ -943,7 +943,7 @@
                     </ul>
                 </div>
                 <div class="filters__block body-type__block">
-                    <h5 class="filters__block-name">тип топлива:</h5>
+                    <h5 class="filters__block-name">тип кузова:</h5>
                     <ul class="filters__block__list  body-type__list">
                         <li class="filters__block-item">
                             <div class="flitres__block-check">
@@ -1019,7 +1019,7 @@
                             <img class="news__item-photo" src="img/news/news-1.png" alt="news photo">
                             <h4 class="news__item-title">Как выбрать идеальный автомобиль на импортном рынке?</h4>
                             <p class="news__item-descr">Как разобраться в ключевых аспектах выбора автомобиля при заказе из-за рубежа?</p>
-                            <a class="news__item-link" href="/">Читать статью</a>
+                            <p class="news__item-link">Читать статью</p>
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -1027,7 +1027,7 @@
                             <img class="news__item-photo" src="img/news/news-2.png" alt="news photo">
                             <h4 class="news__item-title">Премиум авто из Европы и Кореи: Топ-5 брендов для роскошных поездок</h4>
                             <p class="news__item-descr">Обзор самых популярных и востребованных марок автомобилей премиум класса.</p>
-                            <a class="news__item-link" href="/">Читать статью</a>
+                            <p class="news__item-link">Читать статью</p>
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -1035,7 +1035,7 @@
                             <img class="news__item-photo" src="img/news/news-3.png" alt="news photo">
                             <h4 class="news__item-title">Импорт автомобилей: Что важно знать о таможенных и налоговых аспектах?</h4>
                             <p class="news__item-descr">Правила и налоги при импорте автомобилей, чтобы Вы были готовы к всем формальностям.</p>
-                            <a class="news__item-link" href="/">Читать статью</a>
+                            <p class="news__item-link">Читать статью</p>
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -1043,7 +1043,7 @@
                             <img class="news__item-photo" src="img/news/news-1.png" alt="news photo">
                             <h4 class="news__item-title">Как выбрать идеальный автомобиль на импортном рынке?</h4>
                             <p class="news__item-descr">Как разобраться в ключевых аспектах выбора автомобиля при заказе из-за рубежа?</p>
-                            <a class="news__item-link" href="/">Читать статью</a>
+                            <p class="news__item-link">Читать статью</p>
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -1051,7 +1051,7 @@
                             <img class="news__item-photo" src="img/news/news-2.png" alt="news photo">
                             <h4 class="news__item-title">Премиум авто из Европы и Кореи: Топ-5 брендов для роскошных поездок</h4>
                             <p class="news__item-descr">Обзор самых популярных и востребованных марок автомобилей премиум класса.</p>
-                            <a class="news__item-link" href="/">Читать статью</a>
+                            <p class="news__item-link">Читать статью</p>
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -1059,7 +1059,7 @@
                             <img class="news__item-photo" src="img/news/news-3.png" alt="news photo">
                             <h4 class="news__item-title">Импорт автомобилей: Что важно знать о таможенных и налоговых аспектах?</h4>
                             <p class="news__item-descr">Правила и налоги при импорте автомобилей, чтобы Вы были готовы к всем формальностям.</p>
-                            <a class="news__item-link" href="/">Читать статью</a>
+                            <p class="news__item-link">Читать статью</p>
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -1067,7 +1067,7 @@
                             <img class="news__item-photo" src="img/news/news-1.png" alt="news photo">
                             <h4 class="news__item-title">Как выбрать идеальный автомобиль на импортном рынке?</h4>
                             <p class="news__item-descr">Как разобраться в ключевых аспектах выбора автомобиля при заказе из-за рубежа?</p>
-                            <a class="news__item-link" href="/">Читать статью</a>
+                            <p class="news__item-link">Читать статью</p>
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -1075,7 +1075,7 @@
                             <img class="news__item-photo" src="img/news/news-2.png" alt="news photo">
                             <h4 class="news__item-title">Премиум авто из Европы и Кореи: Топ-5 брендов для роскошных поездок</h4>
                             <p class="news__item-descr">Обзор самых популярных и востребованных марок автомобилей премиум класса.</p>
-                            <a class="news__item-link" href="/">Читать статью</a>
+                            <p class="news__item-link">Читать статью</з>
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -1083,7 +1083,7 @@
                             <img class="news__item-photo" src="img/news/news-3.png" alt="news photo">
                             <h4 class="news__item-title">Импорт автомобилей: Что важно знать о таможенных и налоговых аспектах?</h4>
                             <p class="news__item-descr">Правила и налоги при импорте автомобилей, чтобы Вы были готовы к всем формальностям.</p>
-                            <a class="news__item-link" href="/">Читать статью</a>
+                            <p class="news__item-link">Читать статью</p>
                         </div>
                     </div>
 
@@ -1120,6 +1120,64 @@
             </div>
         </div>
    </footer>
+
+   <div class="overlay">
+        <div class="rewiew-popup popup">
+            <img class="close" src="img/overlay/close.svg" alt="close icon">
+            <h3 class="rewiew-popup-title">Поделитесь своим опытом: оставьте отзыв о нашей компании по пригону автомобилей из Европы и кореии</h3>
+            <form action="">
+                <input type="text" placeholder="Ваше Имя" required>
+                <input type="text" placeholder="Заказанный автомобиль в нашей компании" required>
+                <textarea name="" id="" placeholder="Ваш отзыв" required></textarea>
+                <p>Нажимая на кнопку, вы соглашаетесь с условиями о персональных данных</p>
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+        <div class="news-popup popup">
+            <img class="close" src="img/overlay/close.svg" alt="close icon">
+            <img class="news-popup-image" src="img/news/popup-image.png" alt="car image">
+            <h3 class="news-popup-title">Как выбрать идеальный автомобиль на импортном рынке?</h3>
+            <p class="news-popup-text">
+                Как выбрать идеальный автомобиль на импортном рынке?
+                <br> <br>
+                Импорт автомобилей становится все более популярным в наше время. Многие автолюбители решают обратиться к импортным автомобилям, чтобы получить доступ к более широкому ассортименту моделей и более конкурентной цене. Однако, при выборе автомобиля на импортном рынке необходимо учесть несколько важных факторов, чтобы найти идеальное авто под свои потребности.
+                <br> <br>
+                Определите свои потребности: Прежде чем начать поиск автомобиля, определитесь с вашими основными потребностями. Какие функции и характеристики важны для вас? Размер автомобиля, количество мест, тип кузова, топливный тип и т.д. Учитывайте также ваш бюджет на приобретение и последующую эксплуатацию автомобиля.
+                <br> <br>
+                Исследуйте импортные рынки: Ознакомьтесь с различными импортными рынками и странами, из которых вы можете импортировать автомобиль. 
+                <br> <br>
+                Проверьте историю автомобиля: Приобретая автомобиль на импортном рынке, важно проверить его историю и состояние. Запросите документы автомобиля, включая сервисную историю, результаты технического осмотра и страховой истории. Также необходимо проверить VIN-код автомобиля и убедиться в его соответствии документам. 
+                <br> <br>
+                Используйте услуги профессионала: Для более точной проверки состояния автомобиля и его истории, рекомендуется обратиться к профессионалам, таким как автомобильные эксперты и сервисные центры. Они могут провести детальную проверку и предоставить вам объективную оценку автомобиля перед его покупкой.
+                <br> <br>
+                Выбор идеального автомобиля на импортном рынке требует тщательного исследования и подготовки. Примените вышеуказанные советы, чтобы максимально учесть ваши потребности и получить надёжный и соответствующий вашим требованиям автомобиль. При этом, не стесняйтесь обратиться за профессиональной помощью, чтобы быть уверенным в правильности сделанного выбора.
+            </p>
+        </div>
+        <div class="select-popup popup">
+            <img class="close" src="img/overlay/close.svg" alt="close icon">
+            <h3 class="select-popup-title">заявка на индивидуальный подбор автомобиля</h3>
+            <div class="select-popup-parameters">
+                <div class="select-popup-parameter">
+                    <h6 class="select-popup-parameters-name">Тип топлива:</h6>
+                    <p class="select-popup-parameters-value fuel-type">Не выбран</p>
+                </div>
+                <div class="select-popup-parameter">
+                    <h6 class="select-popup-parameters-name">Бюджет:</h6>
+                    <p class="select-popup-parameters-value price-value">Не выбран</p>
+                </div>
+                <div class="select-popup-parameter">
+                    <h6 class="select-popup-parameters-name">Тип кузова:</h6>
+                    <p class="select-popup-parameters-value body-type">Не выбран</p>
+                </div>
+            </div>
+            <form action="">
+                <input type="text" placeholder="Ваше Имя" required>
+                <input type="text" placeholder="Ваш номер телефона" required>
+                <p>Нажимая на кнопку, вы соглашаетесь с условиями о персональных данных</p>
+                <button type="submit">Оставить заявку</button>
+            </form>
+        </div>
+   </div>
 
    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
    <script src="js/app.js"></script>

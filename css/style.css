@@ -14,6 +14,7 @@ button {
     outline: none;
     border: none;
     cursor: pointer;
+    transition: .5s ease;
 }
 
 input {
@@ -50,7 +51,7 @@ span {
     align-items: center;
     justify-content: center;
     border-radius: 40px 0px;
-    font-size: 40px;
+    font-size: 40px; 
     font-weight: 700;
     line-height: 105%;
     text-transform: uppercase;
@@ -157,6 +158,11 @@ form button {
     line-height: 130%;
     color: #F8F9FF;
     text-transform: uppercase;
+}
+
+form button:hover {
+    color: #00071E;
+    background: #F8F9FF;
 }
 
 /* Fonts */
@@ -357,7 +363,11 @@ form button {
     background-color: #00071E;
     height: 715px;
     padding-top: 80px;
+}
+
+.promo .container {
     position: relative;
+    height: 100%;
 }
 
 .promo__title {
@@ -399,6 +409,7 @@ form button {
     border-radius: 6px;
     font-size: 20px;
     color: #F8F9FF;
+    transition: .5s ease;
 }
 
 .button-application {
@@ -408,19 +419,30 @@ form button {
     text-transform: uppercase;
 }
 
+.button-application:hover {
+    background: #F8F9FF;
+    color: #00071E;
+}
+
 .button-more {
     width: 198px;
     border: 1px solid #F8F9FF;
     background: none;
 }
 
+.button-more:hover {
+    color: #00071E;
+    background: #A8A8A8;
+}
+
 .animation__wrapper {
     position: absolute;
     bottom: 20px;
-    right: 419px;
+    right: 0;
     width: 644.379px;
     height: 498px;
     background: url('../img/promo/car.png') center center / cover no-repeat;
+    overflow: hidden;
 }
 
 .light {
@@ -616,7 +638,8 @@ form button {
     border-top: 4px solid #EDEDED;
 }
 
-.catalog__tab:hover {
+.catalog__tab:hover,
+.catalog__tab.active {
     border-radius: 2px;
     border-top: 4px solid #D81010;
 }
@@ -632,6 +655,7 @@ form button {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 .dropdown__title {
@@ -671,6 +695,11 @@ form button {
     gap: 16px;
     border-top: 1px solid rgba(0, 7, 30, 0.20);
     cursor: pointer;
+    transition: .3s ease;
+}
+
+.dropdown__item:hover {
+    background-color: #D9D9D9;
 }
 
 .dropdown__item:first-child {
@@ -699,13 +728,7 @@ form button {
     border: 1px solid rgba(168, 168, 168, 0.32);
     background: #F8F9FF;
     padding: 10px 10px 20px;
-}
-
-.catalog__item:nth-child(1),
-.catalog__item:nth-child(2),
-.catalog__item:nth-child(3),
-.catalog__item:nth-child(4) {
-    margin-top: 40px;
+    cursor: pointer;
 }
 
 .catalog__item-name {
@@ -1201,6 +1224,11 @@ form button {
     color: #F8F9FF;
 }
 
+.rewiew__button:hover {
+    color: #00071E;
+    background: #A8A8A8;
+}
+
 /* Selection */
 
 .selection {
@@ -1357,6 +1385,11 @@ form button {
     text-transform: uppercase;
 }
 
+.selection__button:hover {
+    color: #00071E;
+    background: #F8F9FF;
+}
+
 .news {
     padding: 40px 0;
     background-color: #EDEDED;
@@ -1389,6 +1422,167 @@ form button {
     text-align: right;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+    font-weight: 300;
+    line-height: 130%;
+    cursor: pointer;
+}
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: linear-gradient(0deg, rgba(0, 7, 30, 0.60) 0%, rgba(0, 7, 30, 0.60) 100%);
+    z-index: -10;
+    opacity: 0;
+    transition: .5s ease;
+    overflow-y: scroll;
+}
+
+.overlay.active {
+    opacity: 1;
+    z-index: 10;
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: none;
+    transition: .5s ease;
+}
+
+.popup.active {
+    display: block;
+}
+
+.close {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    cursor: pointer;
+}
+
+.rewiew-popup, .select-popup {
+    width: 864px;
+    padding: 80px;
+    background: #F8F9FF;
+    border-radius: 6px;
+}
+
+.rewiew-popup-title,
+.select-popup-title {
+    color: #0B0B0B;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 105%;
+    text-transform: uppercase;
+}
+
+.select-popup-title {
+    font-size: 40px;
+}
+
+.rewiew-popup form,
+.select-popup form {
+    margin: 0 auto;
+    margin-top: 40px;
+    max-width: 602px;
+}
+
+.rewiew-popup form input,
+.rewiew-popup form textarea, 
+.select-popup form input {
+    border: 1px solid #00071E;
+}
+
+.rewiew-popup form textarea {
+    height: 200px;
+    padding: 14px 20px;
+}
+
+.rewiew-popup form p,
+.select-popup form p {
+    color: #0B0B0B;
+    text-align: left;
+}
+
+.rewiew-popup form button {
+    width: 172px;
+}
+
+.select-popup form button {
+    width: 240px;
+}
+
+.rewiew-popup form button:hover, 
+.select-popup form button:hover {
+    background-color: #C30000;
+    color: #F8F9FF;
+}
+
+.overlay::-webkit-scrollbar {
+    display: none;
+}
+
+.news-popup {
+    padding: 40px;
+    background: #F8F9FF;
+    border-radius: 6px;
+    text-align: left;
+    width: 1080px;
+}
+
+.news-popup-image {
+    display: block;
+    margin: 0 auto;
+}
+
+.news-popup-title {
+    margin: 20px 0;
+    color: #020820;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 120%;
+    text-transform: uppercase;
+}
+
+.news-popup-text {
+    color: #0B0B0B;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 130%;
+}
+
+.select-popup-parameters {
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 450px;
+}
+
+.select-popup-parameter {
+    display: flex;
+    justify-content: space-between;
+}
+
+.select-popup-parameters-name {
+    color: #0B0B0B;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 130%;
+}
+
+.select-popup-parameters-value {
+    color: #0B0B0B;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
     font-weight: 300;
     line-height: 130%;
 }
