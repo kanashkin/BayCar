@@ -18,33 +18,6 @@ const collapse = () => {
 }
 
 
-const rewiewPag = document.querySelectorAll('.swiper-pagination')[0]
-
-const rewiewSwiper = new Swiper('.swiper-rewiews', {
-    slidesPerView: 2,
-    slidesPerGroup: 2,
-    loop: true,
-    navigation: {
-        nextEl: '.swiper-rewiew-right',
-        prevEl: '.swiper-rewiew-left',
-    },
-    pagination: {
-        el: rewiewPag,
-        clickable: true
-    }
-})
-
-const newsPag = document.querySelectorAll('.swiper-pagination')[1]
-
-const newsSwiper = new Swiper('.swiper-news', {
-    slidesPerView: 3,
-    slidesPerGroup: 3,
-    pagination: {
-        el: newsPag,
-        clickable: true
-    }
-})
-
 const showPopup = (popupSelector) => {
     const popup = document.querySelector(popupSelector)
     const overlay = document.querySelector('.overlay')
@@ -65,6 +38,16 @@ const showPopup = (popupSelector) => {
             overlay.classList.remove('active')
             popup.classList.remove('active')
         }
+    })
+}
+
+const carPopup = () => {
+    const triggerBtn = document.querySelectorAll('.catalog__item')
+
+    triggerBtn.forEach(item => {
+        item.addEventListener('click', () => {
+            showPopup('.car-popup')
+        })
     })
 }
 
@@ -131,6 +114,97 @@ const selectPopup = () => {
     })
 }
 
+const catalogFilters = () => {
+    const tabs = document.querySelectorAll('.catalog__tab')
+    const dropdownItems = document.querySelectorAll('.dropdown__item')
+    const catalogItems = document.querySelectorAll('.catalog__item')
+
+    let currentFirm = 'all'
+    let currentCarType = 'all'
+
+    tabs.forEach(item => {
+        item.addEventListener('click', () => {
+            tabs.forEach(item => {
+                item.classList.remove('active')
+            })
+            item.classList.add('active')
+            currentCarType = item.getAttribute('data-car-type')
+            updateItems()
+        })
+    })
+
+    dropdownItems.forEach(item => {
+        item.addEventListener('click', () => {
+            currentFirm = item.getAttribute('data-firm')
+            updateItems()
+        })
+    })
+
+    const updateItems = () => {
+        catalogItems.forEach(item => {
+            if (currentCarType === 'all' && currentFirm != 'all') {
+                if (item.getAttribute('data-firm') === currentFirm) {
+                    item.style.display = ''
+                } else {
+                    item.style.display = 'none'
+                }
+            } else if (currentCarType != 'all' && currentFirm === 'all') {
+                if (item.getAttribute('data-car-type') === currentCarType) {
+                    item.style.display = ''
+                } else {
+                    item.style.display = 'none'
+                }
+            } else if (currentCarType != 'all' && currentFirm != 'all') {
+                if (item.getAttribute('data-car-type') === currentCarType && item.getAttribute('data-firm') === currentFirm) {
+                    item.style.display = ''
+                } else {
+                    item.style.display = 'none'
+                }
+            }
+        })
+    }
+}
+
+
+const rewiewPag = document.querySelectorAll('.swiper-pagination')[0]
+
+const rewiewSwiper = new Swiper('.swiper-rewiews', {
+    slidesPerView: 2,
+    slidesPerGroup: 2,
+    loop: true,
+    navigation: {
+        nextEl: '.swiper-rewiew-right',
+        prevEl: '.swiper-rewiew-left',
+    },
+    pagination: {
+        el: rewiewPag,
+        clickable: true
+    }
+})
+
+const newsPag = document.querySelectorAll('.swiper-pagination')[1]
+
+const newsSwiper = new Swiper('.swiper-news', {
+    slidesPerView: 3,
+    slidesPerGroup: 3,
+    pagination: {
+        el: newsPag,
+        clickable: true
+    }
+})
+
+const carSwiper = new Swiper('.swiper-car', {
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    loop: true,
+    navigation: {
+        nextEl: '.swiper-car-right',
+        prevEl: '.swiper-car-left'
+    }
+})
+
+catalogFilters()
+carPopup()
 priceFilter()
 selectPopup()
 newsPopup()

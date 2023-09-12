@@ -37,6 +37,10 @@ span {
     font-family: inherit;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .container {
     max-width: 1252px;
     margin: 0 auto;
@@ -442,7 +446,6 @@ form button:hover {
     width: 644.379px;
     height: 498px;
     background: url('../img/promo/car.png') center center / cover no-repeat;
-    overflow: hidden;
 }
 
 .light {
@@ -1585,4 +1588,27 @@ form button:hover {
     font-size: 20px;
     font-weight: 300;
     line-height: 130%;
+}
+
+.car-popup {
+    max-width: 1160px;
+    padding: 80px;
+    background: #F8F9FF;
+    border-radius: 6px;
+}
+
+.swiper-car-left,
+.swiper-car-right {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.swiper-car-left {
+    left: 20px;
+}
+
+.swiper-car-right {
+    right: 20px;
 }
