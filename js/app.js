@@ -41,6 +41,16 @@ const showPopup = (popupSelector) => {
     })
 }
 
+const mainPopup = () => {
+    const triggerBtn = document.querySelector('.button-application')
+    triggerBtn.addEventListener('click', () => {
+        showPopup('.select-popup')
+        const popup = document.querySelector('.select-popup')
+        const parametersBlock = popup.querySelector('.select-popup-parameters')
+        parametersBlock.remove()
+    })
+}
+
 const carPopup = () => {
     const triggerBtn = document.querySelectorAll('.catalog__item')
 
@@ -160,9 +170,27 @@ const catalogFilters = () => {
                 } else {
                     item.style.display = 'none'
                 }
+            } else if (currentFirm === 'all' && currentCarType === 'all') {
+                item.style.display = ''
             }
         })
     }
+}
+
+const pageScroll = () => {
+    const btns = document.querySelectorAll('.nav__list-item a')
+
+    btns.forEach(item => {
+        item.addEventListener('click', (e) => {
+            e.preventDefault()
+            let blockId = item.getAttribute('href')
+            let block = document.querySelector(blockId)
+            block.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            })
+        })
+    })
 }
 
 
@@ -203,6 +231,8 @@ const carSwiper = new Swiper('.swiper-car', {
     }
 })
 
+pageScroll()
+mainPopup()
 catalogFilters()
 carPopup()
 priceFilter()
