@@ -20,3 +20,30 @@ const collapse = () => {
 }
 
 collapse()
+
+const rewiewPag = document.querySelectorAll('.swiper-pagination')[0]
+
+const rewiewSwiper = new Swiper('.swiper-rewiews', {
+    slidesPerView: 2,
+    slidesPerGroup: 2,
+    loop: true,
+    navigation: {
+        nextEl: '.swiper-rewiew-right',
+        prevEl: '.swiper-rewiew-left',
+    },
+    pagination: {
+        el: rewiewPag,
+        clickable: true
+    }
+})
+
+const newsPag = document.querySelectorAll('.swiper-pagination')[1]
+
+const newsSwiper = new Swiper('.swiper-news', {
+    slidesPerView: 3,
+    slidesPerGroup: 3,
+    pagination: {
+        el: newsPag,
+        clickable: true
+    }
+})
