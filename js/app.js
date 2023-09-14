@@ -1,5 +1,5 @@
 const dropDownMenu = () => {
-    const triggerBtn = document.querySelector('.dropdown__trigger')
+    const triggerBtn = document.querySelector('.dropdown__block')
     const menu = document.querySelector('.dropdown__menu')
 
     triggerBtn.addEventListener('click', () => {
@@ -47,7 +47,7 @@ const mainPopup = () => {
         showPopup('.select-popup')
         const popup = document.querySelector('.select-popup')
         const parametersBlock = popup.querySelector('.select-popup-parameters')
-        parametersBlock.remove()
+        parametersBlock.style.display = 'none'
     })
 }
 
@@ -115,9 +115,12 @@ const selectPopup = () => {
             field.textContent = 'Не выбран'
         }
     }
+
     
     triggerbtn.addEventListener('click', () => {
         showPopup('.select-popup')
+        const parametersBlock = popup.querySelector('.select-popup-parameters')
+        parametersBlock.style.display = ''
         addValueToField(fuelTypeFilters, fuelTypeField)
         addValueToField(priceFilters, priceField)
         addValueToField(bodyTypeFilters, bodyTypeField)
@@ -172,8 +175,13 @@ const catalogFilters = () => {
                 }
             } else if (currentFirm === 'all' && currentCarType === 'all') {
                 item.style.display = ''
+            } else if (currentFirm != 'all' && currentCarType === 'all') {
+                item.style.display = ''
             }
         })
+
+        const menu = document.querySelector('.dropdown__menu')
+        menu.classList.remove('active')
     }
 }
 

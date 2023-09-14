@@ -659,6 +659,7 @@ form button:hover {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 30px;
+    cursor: pointer;
 }
 
 .dropdown__title {
@@ -721,7 +722,7 @@ form button:hover {
 .catalog__page {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 8px;
 }
 
 .catalog__item {

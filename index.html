@@ -12,30 +12,32 @@
 </head>
 <body>
    <header class="header">
-        <div class="container header__wrapper">
-            <a href="index.html">
-                <img src="img/logo.svg" alt="logo icon">
-            </a>
-            <div class="header__block">
-                <div class="contacts">
-                    <p class="header__title">Автомобили под заказ из Европы и Кореи</p>
-                    <a class="phone" href="tel:+74958888888">+7 (495) 888 88 88</a>
-
-                    <div class="telegram"></div>
-                    <div class="whatsapp"></div>    
+        <div class="container">
+            <div class="header__wrapper">
+                <a href="index.html">
+                    <img src="img/logo.svg" alt="logo icon">
+                </a>
+                <div class="header__block">
+                    <div class="contacts">
+                        <p class="header__title">Автомобили под заказ из Европы и Кореи</p>
+                        <a class="phone" href="tel:+74958888888">+7 (495) 888 88 88</a>
+    
+                        <div class="telegram"></div>
+                        <div class="whatsapp"></div>    
+                    </div>
+                    
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__list-item"><a href="#about">О нас</a></li>
+                            <li class="nav__list-item"><a href="#catalog">Каталог</a></li>
+                            <li class="nav__list-item"><a href="#advantages">преимущества</a></li>
+                            <li class="nav__list-item"><a href="#rewiews">Отзывы</a></li>
+                            <li class="nav__list-item"><a href="#news">Статьи</a></li>
+                            <li class="nav__list-item"><a href="#price">Цены</a></li>
+                            <li class="nav__list-item"><a href="#footer">Контакты</a></li>
+                        </ul>
+                    </nav>
                 </div>
-                
-                <nav class="nav">
-                    <ul class="nav__list">
-                        <li class="nav__list-item"><a href="#about">О нас</a></li>
-                        <li class="nav__list-item"><a href="#catalog">Каталог</a></li>
-                        <li class="nav__list-item"><a href="#advantages">преимущества</a></li>
-                        <li class="nav__list-item"><a href="#rewiews">Отзывы</a></li>
-                        <li class="nav__list-item"><a href="#news">Статьи</a></li>
-                        <li class="nav__list-item"><a href="#price">Цены</a></li>
-                        <li class="nav__list-item"><a href="#footer">Контакты</a></li>
-                    </ul>
-                </nav>
             </div>
         </div>
    </header>
@@ -160,6 +162,7 @@
         <div class="container">
             <h2 class="title catalog__title">пригнанные автомобили</h2>
             <ul class="catalog__tabs">
+                <li class="catalog__tab" data-car-type="all">Все</li>
                 <li class="catalog__tab" data-car-type="sedan">Седан</li>
                 <li class="catalog__tab" data-car-type="hatchback">Хэтчбек</li>
                 <li class="catalog__tab" data-car-type="miniwan">минивэн</li>
@@ -421,7 +424,7 @@
 
    <section class="price" id="price">
         <div class="container">
-            <h2 class="title price__title">пригнанные автомобили</h2>
+            <h2 class="title price__title">Этапы работы и стоимость</h2>
             <h3 class="price__subtitle">Общая стоимость наших услуг рассчитывается в российских рублях, и она начинается <span>от 35 000 рублей</span></h3>
             <div class="stages">
                 <h3 class="stages__title block-title"><span>Этапы Работы</span> в России включают:</h3>
@@ -1094,28 +1097,30 @@
    </section>
 
    <footer class="footer" id="footer">
-        <div class="container footer__wrapper">
-            <a href="index.html">
-                <img src="img/logo.svg" alt="logo icon">
-            </a>
-            <div class="footer__block">
-                <nav class="nav footer-nav">
-                    <ul class="nav__list">
-                        <li class="nav__list-item"><a href="#about">О нас</a></li>
-                        <li class="nav__list-item"><a href="#catalog">Каталог</a></li>
-                        <li class="nav__list-item"><a href="#advantages">преимущества</a></li>
-                        <li class="nav__list-item"><a href="#rewiews">Отзывы</a></li>
-                        <li class="nav__list-item"><a href="#news">Статьи</a></li>
-                        <li class="nav__list-item"><a href="#price">Цены</a></li>
-                        <li class="nav__list-item"><a href="#footer">Контакты</a></li>
-                    </ul>
-                </nav>
-                <div class="contacts">
-                    <a class="phone" href="tel:+74958888888">+7 (495) 888 88 88</a>
-
-                    <div class="telegram"></div>
-                    <div class="whatsapp"></div>
-                    <button class="button-application">Оставить заявку</button>
+        <div class="container">
+            <div class="footer__wrapper">
+                <a href="index.html">
+                    <img src="img/logo.svg" alt="logo icon">
+                </a>
+                <div class="footer__block">
+                    <nav class="nav footer-nav">
+                        <ul class="nav__list">
+                            <li class="nav__list-item"><a href="#about">О нас</a></li>
+                            <li class="nav__list-item"><a href="#catalog">Каталог</a></li>
+                            <li class="nav__list-item"><a href="#advantages">преимущества</a></li>
+                            <li class="nav__list-item"><a href="#rewiews">Отзывы</a></li>
+                            <li class="nav__list-item"><a href="#news">Статьи</a></li>
+                            <li class="nav__list-item"><a href="#price">Цены</a></li>
+                            <li class="nav__list-item"><a href="#footer">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="contacts">
+                        <a class="phone" href="tel:+74958888888">+7 (495) 888 88 88</a>
+    
+                        <div class="telegram"></div>
+                        <div class="whatsapp"></div>
+                        <button class="button-application">Оставить заявку</button>
+                    </div>
                 </div>
             </div>
         </div>
