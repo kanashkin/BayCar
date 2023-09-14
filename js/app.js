@@ -42,12 +42,15 @@ const showPopup = (popupSelector) => {
 }
 
 const mainPopup = () => {
-    const triggerBtn = document.querySelector('.button-application')
-    triggerBtn.addEventListener('click', () => {
-        showPopup('.select-popup')
-        const popup = document.querySelector('.select-popup')
-        const parametersBlock = popup.querySelector('.select-popup-parameters')
-        parametersBlock.style.display = 'none'
+    const triggerBtns = document.querySelectorAll('.button-application')
+    
+    triggerBtns.forEach(item => {
+        item.addEventListener('click', () => {
+            showPopup('.select-popup')
+            const popup = document.querySelector('.select-popup')
+            const parametersBlock = popup.querySelector('.select-popup-parameters')
+            parametersBlock.style.display = 'none'
+        })
     })
 }
 
@@ -187,8 +190,9 @@ const catalogFilters = () => {
 
 const pageScroll = () => {
     const btns = document.querySelectorAll('.nav__list-item a')
+    const promoBtn = document.querySelector('.button-more-link')
 
-    btns.forEach(item => {
+    const scrollToBlock = (item) => {
         item.addEventListener('click', (e) => {
             e.preventDefault()
             let blockId = item.getAttribute('href')
@@ -198,7 +202,13 @@ const pageScroll = () => {
                 block: "start"
             })
         })
+    }
+
+    btns.forEach(item => {
+        scrollToBlock(item)
     })
+
+    scrollToBlock(promoBtn)
 }
 
 
