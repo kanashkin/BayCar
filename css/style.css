@@ -1010,6 +1010,9 @@ form button:hover {
         max-width: 100%;
         width: 100%;
     }
+    .consultation__title {
+        max-width: 100%;
+    }
 }
 
 /* Catalog */
@@ -1233,7 +1236,8 @@ form button:hover {
         width: 274px;
     }
     .catalog__tabs {
-        overflow-x: scroll;
+        overflow: scroll;
+        justify-content: space-between;
     }
     .catalog__tabs::-webkit-scrollbar {
         display: none;
