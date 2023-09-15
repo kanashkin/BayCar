@@ -2432,8 +2432,12 @@ form button:hover {
     .select-popup {
         padding: 20px;
     }
-    .select-popup-title {
+    .select-popup-title,
+    .news-popup-title {
         font-size: 20px;
+    }
+    .news-popup-text {
+        font-size: 14px;
     }
     .car-popup {
         width: 340px;
@@ -2445,6 +2449,15 @@ form button:hover {
     .rewiew-popup {
         width: 340px;
     }
+    .news-popup {
+        width: 340px;
+        padding: 30px;
+    }
+    .news-popup-image {
+        object-fit: cover;
+        width: 100%;
+    }
+    
 }
 
 @media (max-height: 990px) {
