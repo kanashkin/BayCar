@@ -50,6 +50,7 @@ body {
 /* Common styles */
 
 .title {
+    height: 66px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -106,6 +107,7 @@ body {
 .block-title span {
     color: #C30000;
 }
+
 
 .red__banner {
     margin-top: 80px;
@@ -167,6 +169,26 @@ form button {
 form button:hover {
     color: #00071E;
     background: #F8F9FF;
+}
+
+@media (max-width: 1200px) {
+    .title {
+        font-size: 32px;
+        height: 58px;
+    }
+    .block-title {
+        font-size: 32px;
+    }
+    form input {
+        height: 49px;
+        font-size: 16px;
+    }
+    form textarea {
+        font-size: 16px;
+    }
+    form button {
+        font-size: 14px;
+    }
 }
 
 /* Fonts */
@@ -361,6 +383,39 @@ form button:hover {
     margin-right: 360px;
 }
 
+@media (max-width: 1200px) {
+    .container {
+        max-width: 768px;
+    }
+    .logo {
+        width: 74px;
+        height: 35px;
+    }
+    .header__wrapper, .footer__wrapper {
+        gap: 12px;
+    }
+    .header__title, .phone {
+        font-size: 16px;
+        margin-right: 0 !important;
+    }
+    .nav__list-item {
+        padding: 12px 10px 10px 10px;
+        font-size: 15px;
+    }
+    .whatsapp {
+        margin-right: 10px;
+    }
+    .footer .whatsapp {
+        margin-right: 0;
+    }
+    .footer .telegram {
+        margin-left: 100px;
+    }
+    .footer .button-application {
+        margin-right: 10px;
+    }
+}
+
 /* Promo */
 .promo {
     background: url('../img/promo/bg.png') center center / cover no-repeat;
@@ -445,7 +500,7 @@ form button:hover {
     right: 0;
     width: 644.379px;
     height: 498px;
-    background: url('../img/promo/car.png') center center / cover no-repeat;
+    background: url('../img/promo/car.png') center center / contain no-repeat;
 }
 
 .light {
@@ -467,6 +522,56 @@ form button:hover {
     right: -65.97px
 }
 
+@media (max-width: 1200px) {
+    button {
+        height: 46px !important;
+        font-size: 16px;
+    }
+    .promo {
+        position: relative;
+        padding: 40px;
+    }
+    .promo .container {
+        position: static;
+    }
+    .promo__title {
+        font-size: 40px;
+    }
+    .promo__subtitle {
+        font-size: 32px;
+    }
+    .promo__descr {
+        font-size: 20px;
+        margin-top: 20px;
+        max-width: 310px;
+    }
+    .button-application {
+        width: 185px;
+        font-size: 14px;
+    }
+    .animation__wrapper {
+        width: 515px;
+        height: 474px;
+        right: 35px;
+        bottom: -20px;
+    }
+    .promo__button-block {
+        margin-bottom: 20px;
+    }
+    .left-light {
+        top: 127px;
+        left: -101.65px;
+    }
+    .right-light {
+        top: 125px;
+        right: -88.97px;
+    }
+    .button-more-link {
+        position: relative;
+        z-index: 6;
+    }
+}
+
 /* Cards */
 .cards {
     background-color: #00071E;
@@ -476,7 +581,8 @@ form button:hover {
 }
 
 .cards__wrapper {
-    width: 1010px;
+    width: 1050px;
+    padding: 0 20px;
     display: flex;
     justify-content: space-between;
 }
@@ -509,6 +615,20 @@ form button:hover {
     line-height: 130%;
     color: #F8F9FF;
 }
+
+@media(max-width: 1200px) {
+    .cards {
+        padding-bottom: 0;
+    }
+    .cards__wrapper {
+        gap: 10px;
+    }
+    .card__title {
+        font-size: 16px;
+    }
+}
+
+/* About */
 
 .about {
     background: url('../img/about/bg.jpg') center center / cover no-repeat;
@@ -566,6 +686,28 @@ form button:hover {
     color: #F8F9FF;
 }
 
+@media(max-width: 1200px) {
+    .about {
+        padding-top: 120px;
+    }
+    .about__descr, .about__services-descr {
+        font-size: 16px;
+    }
+    .red__banner {
+        margin-top: 40px;
+    }
+    .red__banner-text {
+        font-size: 20px;
+    }
+    .about__services {
+        margin-top: 40px;
+    }
+    .about__services-wrapper {
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
 /* Consultation */
 .consultation {
     padding: 100px 0 60px 0;
@@ -607,6 +749,24 @@ form button:hover {
     font-weight: 300;
     line-height: 130%;
     color: #F8F9FF;
+}
+
+@media(max-width: 1200px) {
+    .consultation {
+        padding: 80px 0 40px;
+    }
+    .consultation__title {
+        font-size: 32px;
+        width: 602px;
+    }
+    .consultation__descr {
+        font-size: 16px;
+    }
+    .consultation__wrapper {
+        flex-direction: column;
+        gap: 40px;
+        align-items: flex-start;
+    }
 }
 
 /* Catalog */
@@ -786,6 +946,45 @@ form button:hover {
     line-height: 130%;
 }
 
+@media (max-width: 1200px) {
+    .catalog {
+        padding-bottom: 100px;
+    }
+    .catalog__title {
+        max-width: 547px;
+    }
+    .catalog__tabs {
+        margin-top: 20px;
+    }
+    .catalog__tab {
+        padding: 12px 10px 10px 10px;
+        font-size: 14px;
+    }
+    .catalog__item {
+        width: 236px;
+        height: 473px;
+        overflow: hidden;
+    }
+    .catalog__item:nth-child(7),
+    .catalog__item:nth-child(8) {
+        display: none;
+    }
+    .catalog__item-image {
+        width: 216px;
+        height: 220px;
+    }
+    .catalog__item-name {
+        height: fit-content;
+        font-size: 16px;
+    }
+    .info__item-name, .info__item-value {
+        font-size: 14px !important;
+    }
+    .catalog__item-price__title {
+        font-size: 14px;
+    }
+}
+
 /* Price */
 .price {
     padding: 100px 60px;
@@ -834,9 +1033,11 @@ form button:hover {
 }
 
 .payment__banner {
+    border-radius: 6px;
+    border: 1px solid #F8F9FF;
     margin: 0 auto;
     margin-top: 57px;
-    max-width: 1010px;
+    width: 1050px;
     padding: 40px;
     background: url('../img/price/banner-bg.png');
 }
@@ -855,7 +1056,7 @@ form button:hover {
 }
 
 .price__rules {
-    max-width: 1010px;
+    width: 1050px;
     margin: 0 auto;
     margin-top: 80px;
 }
@@ -897,6 +1098,47 @@ form button:hover {
     text-align: center;
 }
 
+@media (max-width: 1200px) {
+    .price {
+        padding: 40px 0 0;
+    }
+    .price__title {
+        width: 572px;
+    }
+    .price__subtitle {
+        font-size: 20px;
+    }
+    .price .check__list {
+        max-width: 524px;
+    }
+    .price .check__list-item {
+        font-size: 16px;
+    }
+    .big__logo {
+        width: 293px;
+        height: 138.296px;
+        bottom: -70px;
+    }
+    .payment__banner {
+        margin-top: 65px;
+        position: relative;
+        z-index: 10;
+        width: 100%;
+    }
+    .payment__banner-text {
+        font-size: 20px;
+    }
+    .price__rules {
+        max-width: 100%;
+    }
+    .price__rules__list {
+        gap: 20px;
+    }
+    .price__rules-item {
+        font-size: 16px;
+    }
+}
+
 /* Advantages */
 .advantages {
     padding-top: 40px;
@@ -910,7 +1152,8 @@ form button:hover {
 }
 
 .advantages__wrapper {
-    max-width: 1010px;
+    width: 1050px;
+    padding: 0 20px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -941,6 +1184,28 @@ form button:hover {
     font-size: 20px;
     font-weight: 300;
     line-height: 130%;
+}
+
+@media(max-width: 1200px) {
+    .advantages {
+        padding-top: 80px;
+    }
+    .advantages__title {
+        max-width: 505px;
+        margin-bottom: 40px;
+    }
+    .advantages__wrapper {
+        max-width: 100%;
+    }
+    .advantages__item {
+        max-width: 50%;
+    }
+    .advantages__item-title {
+        font-size: 20px;
+    }
+    .advantages__item-descr {
+        font-size: 16px;
+    }
 }
 
 /* Help */
@@ -988,6 +1253,26 @@ form button:hover {
     top: 0;
 }
 
+@media (max-width: 1200px) {
+    .help {
+        padding-top: 80px;
+    }
+    .help__car {
+        width: 386px;
+        height: 586px;
+    }
+    .help__left__block {
+        height: auto;
+    }
+    .help__descr {
+        font-size: 16px;
+        max-width: 482px;
+    }
+    .help form {
+        max-width: 482px;
+    }
+}
+
 /* FAQ */
 
 .faq {
@@ -1004,7 +1289,8 @@ form button:hover {
 .collapse {
     margin: 0 auto;
     margin-top: 80px;
-    max-width: 1010px;
+    width: 1050px;
+    padding: 0 20px;
 }
 
 .collapse__block {
@@ -1086,6 +1372,22 @@ form button:hover {
     transition: .5s ease;
 }
 
+@media(max-width: 1200px) {
+    .faq {
+        padding-top: 80px;
+    }
+    .faq__title {
+        width: 602px;
+    }
+    .collapse {
+        max-width: 100%;
+        margin-top: 40px;
+    }
+    .collapse__block-title, .collapse__block-answer {
+        font-size: 16px;
+    }
+}
+
 /* Rewiews */
 
 .rewiews {
@@ -1105,6 +1407,7 @@ form button:hover {
 .swiper-rewiews {
     margin-top: 80px;
     max-width: 1010px;
+    padding: 0 20px;
 }
 
 .rewiew {
@@ -1233,6 +1536,28 @@ form button:hover {
     background: #A8A8A8;
 }
 
+@media (max-width: 1200px) {
+    .rewiews {
+        padding: 80px 0 0;
+    }
+    .rewiews__title {
+        width: 531px;
+    }
+    .swiper-rewiews {
+        padding: 0;
+    }
+    .rewiew {
+        width: 359px;
+    }
+    .rewiew__content {
+        max-width: 100%;
+    }
+    .rewiew__button {
+        width: 162px;
+        font-size: 14px;
+    }
+}
+
 /* Selection */
 
 .selection {
@@ -1241,7 +1566,8 @@ form button:hover {
 }
 
 .selection__wrapper {
-    max-width: 1010px;
+    width: 1050px;
+    padding: 0 20px;
     margin: 0 auto;
 }
 
@@ -1394,6 +1720,46 @@ form button:hover {
     background: #F8F9FF;
 }
 
+@media (max-width: 1200px) {
+    .selection {
+        padding: 106px 0 40px;
+    }
+    .selection__wrapper {
+        max-width: 100%;
+    }
+    .selection__subtitle {
+        margin-top: 20px;
+        font-size: 16px;
+    }
+    .filters__wrapper {
+        margin-top: 40px;
+        justify-content: center;
+        gap: 8px;
+    }
+    .filters__block {
+        height: 233px;
+        padding: 17px;
+    }
+    .filters__block-name, .fiters__block-item-name {
+        font-size: 15px;
+    }
+    .fuel-type__block {
+        width: 161px;
+    }
+    .body-type__block {
+        width: 310px;
+    }
+    .filters__block__list {
+        gap: 20px;
+    }
+    .selection__button {
+        width: 178px;
+        font-size: 14px;
+    }
+}
+
+/* News */
+
 .news {
     padding: 40px 0;
     background-color: #EDEDED;
@@ -1430,6 +1796,27 @@ form button:hover {
     line-height: 130%;
     cursor: pointer;
 }
+
+@media (max-width: 1200px) {
+    .news__title {
+        width: 399px;
+    }
+    .news__item {
+        max-width: 234px;
+    }
+    .news__item-photo {
+        width: 100%;
+    }
+    .news__item-title {
+        font-size: 16px;
+        height: fit-content;
+    }
+    .news__item-descr {
+        margin-top: 8px;
+    }
+}
+
+/* Overlay */
 
 .overlay {
     position: fixed;
@@ -1612,4 +1999,25 @@ form button:hover {
 
 .swiper-car-right {
     right: 20px;
+}
+
+@media (max-width: 1200px) {
+    .popup {
+        width: auto;
+        height: auto;
+    }
+    .close {
+        top: 10px;
+        right: 10px;
+    }
+    .rewiew-popup {
+        padding: 30px;
+    }
+}
+
+@media (max-height: 990px) {
+    .popup {
+        top: 50px;
+        transform: translateX(-50%);
+    }
 }
