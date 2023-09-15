@@ -212,30 +212,58 @@ const pageScroll = () => {
 }
 
 
+const burgerMenu = () => {
+    const triggerOpenBtn = document.querySelector('.burger')
+    const triggerCloseBtn = document.querySelector('.burger-menu-close')
+    const menu = document.querySelector('.burger-menu')
+
+    triggerOpenBtn.addEventListener('click', () => {
+        menu.classList.add('active')
+    })
+
+    triggerCloseBtn.addEventListener('click', () => {
+        menu.classList.remove('active')
+    })
+}
+
+
 const rewiewPag = document.querySelectorAll('.swiper-pagination')[0]
 
 const rewiewSwiper = new Swiper('.swiper-rewiews', {
-    slidesPerView: 2,
-    slidesPerGroup: 2,
+    slidesPerView: 1,
+    slidesPerGroup: 1,
     loop: true,
-    navigation: {
-        nextEl: '.swiper-rewiew-right',
-        prevEl: '.swiper-rewiew-left',
-    },
+    navigation: false,
     pagination: {
         el: rewiewPag,
         clickable: true
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+            navigation: {
+                nextEl: '.swiper-rewiew-right',
+                prevEl: '.swiper-rewiew-left',
+            },
+        }
     }
 })
 
 const newsPag = document.querySelectorAll('.swiper-pagination')[1]
 
 const newsSwiper = new Swiper('.swiper-news', {
-    slidesPerView: 3,
-    slidesPerGroup: 3,
+    slidesPerView: 1,
+    slidesPerGroup: 1,
     pagination: {
         el: newsPag,
         clickable: true
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+        }
     }
 })
 
@@ -259,3 +287,4 @@ newsPopup()
 rewiewPopup()
 collapse()
 dropDownMenu()
+burgerMenu()
