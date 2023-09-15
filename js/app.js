@@ -224,6 +224,14 @@ const burgerMenu = () => {
     triggerCloseBtn.addEventListener('click', () => {
         menu.classList.remove('active')
     })
+
+    const menuItems = menu.querySelectorAll('.nav__list-item a')
+
+    menuItems.forEach(item => {
+        item.addEventListener('click', () => {
+            menu.classList.remove('active')
+        })
+    })
 }
 
 
