@@ -241,7 +241,6 @@ const rewiewSwiper = new Swiper('.swiper-rewiews', {
     slidesPerView: 1,
     slidesPerGroup: 1,
     loop: true,
-    navigation: false,
     pagination: {
         el: rewiewPag,
         clickable: true
