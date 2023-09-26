@@ -17,6 +17,35 @@ const collapse = () => {
     })
 }
 
+const catalogPagination = () => {
+    const paginationItems = document.querySelectorAll('.catalog__pagination-item')
+    const paginationTrigger = document.querySelector('.pagination-arrow')
+
+    paginationItems[0].classList.add('active')
+    
+    paginationItems.forEach(item => {
+        item.addEventListener('click', () => {
+            paginationItems.forEach(item => {
+                item.classList.remove('active')
+            })
+            item.classList.add('active')
+        })
+    })
+
+    paginationTrigger.addEventListener('click', () => {
+        const currentItem = document.querySelector('.catalog__pagination-item.active')
+        const currentIndex = Array.from(paginationItems).indexOf(currentItem)
+
+        paginationItems.forEach(item => {
+            item.classList.remove('active')
+        })
+
+        paginationItems[currentIndex + 1].classList.add('active')
+    })
+}
+
+catalogPagination()
+
 
 const showPopup = (popupSelector) => {
     const popup = document.querySelector(popupSelector)
@@ -41,6 +70,42 @@ const showPopup = (popupSelector) => {
     })
 }
 
+
+const carPopup = () => {
+    const triggerBtn = document.querySelectorAll('.catalog__item')
+    const carPopups = document.querySelectorAll('.car-popup')
+
+    triggerBtn.forEach(item => {
+        item.addEventListener('click', () => {
+            let carId = item.getAttribute('data-car')
+            carPopups.forEach(item => {
+                let popupId = item.getAttribute('data-car')
+                if (popupId === carId) {
+                    showPopup(`.car-popup[data-car="${popupId}"]`)
+                }
+            })
+        })
+    })
+}
+
+const newsPopup = () => {
+    const triggerBtns = document.querySelectorAll('.news__item-link')
+    const newsPopups = document.querySelectorAll('.news-popup')
+
+    triggerBtns.forEach(item => {
+        item.addEventListener('click', () => {
+            let newsId = item.getAttribute('data-news')
+            newsPopups.forEach(item => {
+                let popupId = item.getAttribute('data-news')
+                if (popupId === newsId) {
+                    showPopup(`.news-popup[data-news="${popupId}"]`)
+                }
+            })
+        })
+    })
+}
+
+
 const mainPopup = () => {
     const triggerBtns = document.querySelectorAll('.button-application')
     
@@ -54,16 +119,6 @@ const mainPopup = () => {
     })
 }
 
-const carPopup = () => {
-    const triggerBtn = document.querySelectorAll('.catalog__item')
-
-    triggerBtn.forEach(item => {
-        item.addEventListener('click', () => {
-            showPopup('.car-popup')
-        })
-    })
-}
-
 const rewiewPopup = () => {
     const triggerBtn = document.querySelector('.rewiew__button')
     triggerBtn.addEventListener('click', () => {
@@ -71,15 +126,6 @@ const rewiewPopup = () => {
     })
 }
 
-const newsPopup = () => {
-    const triggerBtns = document.querySelectorAll('.news__item-link')
-
-    triggerBtns.forEach(item => {
-        item.addEventListener('click', () => {
-            showPopup('.news-popup')
-        })
-    })
-}
 
 const priceFilter = () => {
     const priceFilters = document.querySelectorAll('.price__block input')
@@ -284,14 +330,16 @@ const carSwiper = new Swiper('.swiper-car', {
     }
 })
 
-pageScroll()
-mainPopup()
-catalogFilters()
-carPopup()
-priceFilter()
-selectPopup()
-newsPopup()
-rewiewPopup()
-collapse()
-dropDownMenu()
-burgerMenu()
+window.addEventListener('DOMContentLoaded', () => {
+    pageScroll()
+    mainPopup()
+    catalogFilters()
+    carPopup()
+    priceFilter()
+    selectPopup()
+    newsPopup()
+    rewiewPopup()
+    collapse()
+    dropDownMenu()
+    burgerMenu()
+})
